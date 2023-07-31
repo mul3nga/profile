@@ -1,0 +1,120 @@
+@import url('https://fonts.cdnfonts.com/css/digital-arcade');
+
+/* CSS HEX
+--eerie-black: #191919ff;
+--viridian: #5b9279ff;
+--denim: #2e5eaaff;
+--mint-green: #defff2ff;
+--seasalt: #f6f7f8ff; */
+
+/* SCSS RGB
+$eerie-black: rgba(25, 25, 25, 1);
+$viridian: rgba(91, 146, 121, 1);
+$denim: rgba(46, 94, 170, 1);
+$mint-green: rgba(222, 255, 242, 1);
+$seasalt: rgba(246, 247, 248, 1); */
+
+body {
+  /* background-color: #F6F7F8; */
+  /*Text*/
+  font-family: 'Courier New', Courier, monospace;
+  color:#191919;
+  font-size: 13px;
+  line-height: 18px;
+  /* backgorund */
+  background-image: linear-gradient(to bottom right, rgba(46, 94, 170, 1), rgba(222, 255, 242, 1));
+  /* background-color: #DEFFF2; */
+  background-size:contain;
+}
+
+.grid-template{
+  display: grid;
+  gap: 40px;
+  height: 100vh;
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  border: #191919;
+  /* overflow: hidden; */
+}
+
+.grid-template .socials {
+  height: 50%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+@media (max-width: 960px){
+  .container {
+    width: 800px;
+    margin: 40px auto;
+  }
+}
+@media (max-width: 720px){
+  .container {
+    width: 500px;
+    margin: 40px auto;
+  }
+}
+@media (max-width: 540px){
+  .container {
+    width: 400px;
+    margin: 40px auto;
+  }
+}
+
+h1, h2, h3{
+  color:#191919;
+  font-family:'Digital Arcade', sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 3px;
+}
+
+.header-large{
+  font-size: 30px;
+}
+
+.list-inline > li{
+  list-style: none;
+  display: inline;
+  padding-left: 0px;
+}
+
+.link-box-green {
+  text-decoration: none;
+  color: #DEFFF2;
+  background-color: rgba(46, 94, 170, 1);
+  padding: 10px;
+  margin: 10px;
+  line-height: 45px;
+}
+
+.card-white {
+  background-color: rgba(246, 247, 248, .4);
+  /* padding: 20px 20px; */
+  /* margin: 25px 30px; */
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.img-square{
+  max-height: 250px;
+}
+
+.img-center{
+  align-items: center;
+}
+
+.img-round{
+  border-radius: 250px;
+}
+
+a:hover {
+  background-color: #191919
+}
+
+.img-fit{
+  max-height: 300px;
+  padding: 10px;
+}
